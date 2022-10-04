@@ -27,6 +27,7 @@ body
   overflow: hidden
   display: flex
   flex-direction: column
+  align-items: center
   cursor: default
   background: $blue url("../img/bg.jpg") no-repeat 0 50%/cover
   padding: 170px 0 0 0
@@ -40,6 +41,8 @@ body
       text-align: center
       text-transform: uppercase
       color: #ffffff
+      white-space: nowrap
+      margin: 0 0 15px 0
     &-bottom
       font-family: $font-suisseintl-med
       font-size: 88px
@@ -48,7 +51,8 @@ body
       letter-spacing: 0.02em
       text-transform: uppercase
       color: #ffffff
-      margin: 0 0 15px 0
+
+      white-space: nowrap
       span
         font-family: $font-wulkan
         color: $magenta
@@ -68,6 +72,7 @@ body
       position: absolute
       bottom: 85px
       left: 0
+      z-index: 1
     .chip2
       background: url("../img/chip2.png") no-repeat 0 50%/contain
       position: absolute
@@ -133,6 +138,7 @@ body
       transform: translateX(-50%)
       width: 600px
       height: 265px
+      z-index: 0
   &__footer
     position: absolute
     bottom: 0
@@ -152,6 +158,9 @@ body
       letter-spacing: 0.02em
       text-transform: uppercase
       color: #F8F8F8
+      display: flex
+      align-items: center
+      justify-content: center
       &:not(:last-child)
         margin: 0 25px 0 0
 

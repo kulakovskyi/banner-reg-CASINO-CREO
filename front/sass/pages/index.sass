@@ -1,0 +1,171 @@
+$blue: #000055
+$dark-blue: #00003D
+$magenta: #ff267e
+$grey: #EDEDED
+$green: #05C489
+$green-hover: #05b37c
+
+$font-suisseintl-med: SuisseIntl-Medium, sans-serif //500
+$font-wulkan: WulkanDisplay, sans-serif
+
+body
+  img
+    max-width: 100%
+    height: auto
+
+.wrapper
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  width: 50%
+  height: 100vh
+  height: calc(var(--vh, 1vh) * 100)
+  background: $blue
+  position: relative
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  cursor: default
+  background: $blue url("../img/bg.jpg") no-repeat 0 50%/cover
+  padding: 170px 0 0 0
+  &__text
+    position: relative
+    z-index: 10
+    &-top
+      font-family: $font-suisseintl-med
+      font-size: 142px
+      line-height: 142px
+      text-align: center
+      text-transform: uppercase
+      color: #ffffff
+    &-bottom
+      font-family: $font-suisseintl-med
+      font-size: 88px
+      line-height: 88px
+      text-align: center
+      letter-spacing: 0.02em
+      text-transform: uppercase
+      color: #ffffff
+      margin: 0 0 15px 0
+      span
+        font-family: $font-wulkan
+        color: $magenta
+  &__rulet
+    background: url("../img/roulette.png") no-repeat 0 50%/contain
+    width: 100%
+    flex: 1 1 auto
+    position: relative
+  &__chips
+    position: absolute
+    width: 100%
+    height: 100%
+    .chip1
+      background: url("../img/chip1.png") no-repeat 0 50%/contain
+      width: 324px
+      height: 280px
+      position: absolute
+      bottom: 85px
+      left: 0
+    .chip2
+      background: url("../img/chip2.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 678px
+      height: 472px
+      left: 0
+      bottom: 240px
+    .chip3
+      background: url("../img/chip3.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 111px
+      height: 114px
+      bottom: 682px
+      left: 42px
+    .chip4
+      background: url("../img/chip4.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 519px
+      height: 316px
+      bottom: 543px
+      left: 124px
+    .chip5
+      background: url("../img/chip5.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 148px
+      height: 140px
+      bottom: 708px
+      left: 441px
+    .chip6
+      background: url("../img/chip6.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 168px
+      height: 145px
+      right: 257px
+      bottom: 568px
+    .chip7
+      background: url("../img/chip7.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 306px
+      height: 290px
+      bottom: 540px
+      right: 0
+    .chip8
+      background: url("../img/chip8.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 605px
+      height: 629px
+      right: -69px
+      bottom: 30px
+    .chip9
+      background: url("../img/chip9.png") no-repeat 0 50%/contain
+      position: absolute
+      width: 214px
+      height: 233px
+      left: 43%
+      bottom: 245px
+      transform: translateX(-50%)
+    .card
+      background: url("../img/card.png") no-repeat 0 50%/contain
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translateX(-50%)
+      width: 600px
+      height: 265px
+  &__footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    background: $magenta
+    padding: 7px 0 0 0
+    z-index: 10
+    &-list
+      display: flex
+      align-items: center
+      justify-content: center
+    &-item
+      font-family: $font-suisseintl-med
+      font-size: 100px
+      line-height: 128px
+      letter-spacing: 0.02em
+      text-transform: uppercase
+      color: #F8F8F8
+      &:not(:last-child)
+        margin: 0 25px 0 0
+
+
+
+
+
+
+
+
+.dark
+  .banner__bottom
+    background: #040613
+  .banner__bottom-plus
+    filter: grayscale(1)
+  .banner
+    background: #151721
